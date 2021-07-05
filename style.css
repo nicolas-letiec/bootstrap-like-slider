@@ -1,0 +1,49 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-container{
+    position: relative;
+    width: 640px;
+    height: 426px;
+    border:  1px solid black;
+    overflow: hidden;
+}
+
+.carousel-slide{
+    display: flex;
+    width: 100%;
+}
+
+.carousel-slide img{
+    width: 100%;
+}
+
+#prevBtn,#nextBtn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#prevBtn{
+    left: 2%;
+}
+
+#nextBtn{
+    right: 2%;
+}
